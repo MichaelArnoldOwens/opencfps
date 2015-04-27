@@ -1,6 +1,20 @@
 <h1>Open CFPs</h1>
 
-{{#each sheet_rows}}
+<h2><a href="https://docs.google.com/a/tradecrafted.com/forms/d/1kaWYFS9DPkhknBdqj7mqfSjGo0bUXE2WdPyNwnwU3y8/viewform">Submit an open CFP</a></h2>
+
+<h2>Upcoming Dates</h2>
+{{#each upcoming_dates}}
+	Conference: <a href="{{linktoconference}}">{{conferencename}}</a> <br>
+	CFP : {{linktocfp}} <br>
+	Submit By: {{whensthesubmissiondeadline}} <br>
+	Conference Date: {{whenstheconference}} <br>
+	Other Notes:<br>
+	{{otherthingsweshouldknow}} <br>
+{{/each}}
+
+
+<h2>Passed Dates</h2>
+{{#each passed_dates}}
 	Conference: <a href="{{linktoconference}}">{{conferencename}}</a> <br>
 	CFP : {{linktocfp}} <br>
 	Submit By: {{whensthesubmissiondeadline}} <br>
