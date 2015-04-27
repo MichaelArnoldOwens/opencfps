@@ -1,2 +1,10 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Open CFPs</h1>
+
+{{#each sheet_rows}}
+	Conference: <a href="{{linktoconference}}">{{conferencename}}</a> <br>
+	CFP : {{linktocfp}} <br>
+	Submit By: {{whensthesubmissiondeadline}} <br>
+	Conference Date: {{whenstheconference}} <br>
+	Other Notes:<br>
+	{{otherthingsweshouldknow}} <br>
+{{/each}}
